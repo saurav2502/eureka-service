@@ -1,0 +1,15 @@
+server:
+  port: 8001
+  address: localhost
+spring:
+  profiles:
+    active: eureka
+  application:
+    name: eureka-service
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
